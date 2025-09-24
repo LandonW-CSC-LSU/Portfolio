@@ -10,18 +10,18 @@ import { Skill } from '../../models/skill';
 })
 export class Skills {
   skills: Skill[] = [
-    { name: 'Angular', level: 'Advanced', category: 'Frontend', iconClass: 'fab fa-angular' },
-    { name: 'TypeScript', level: 'Advanced', category: 'Frontend', iconClass: 'fab fa-js-square' },
-    { name: 'JavaScript', level: 'Expert', category: 'Frontend', iconClass: 'fab fa-js-square' },
-    { name: 'HTML5', level: 'Expert', category: 'Frontend', iconClass: 'fab fa-html5' },
-    { name: 'CSS3/SCSS', level: 'Advanced', category: 'Frontend', iconClass: 'fab fa-css3-alt' },
-    { name: 'React', level: 'Intermediate', category: 'Frontend', iconClass: 'fab fa-react' },
-    { name: 'Node.js', level: 'Advanced', category: 'Backend', iconClass: 'fab fa-node-js' },
-    { name: 'Express.js', level: 'Advanced', category: 'Backend', iconClass: 'fas fa-server' },
-    { name: 'MongoDB', level: 'Intermediate', category: 'Database', iconClass: 'fas fa-database' },
-    { name: 'PostgreSQL', level: 'Intermediate', category: 'Database', iconClass: 'fas fa-database' },
-    { name: 'Git', level: 'Advanced', category: 'Tools', iconClass: 'fab fa-git-alt' },
-    { name: 'Docker', level: 'Intermediate', category: 'Tools', iconClass: 'fab fa-docker' }
+    { name: 'C#', category: 'Backend', iconClass: 'fas fa-code' },
+    { name: 'Java', category: 'Backend', iconClass: 'fab fa-java' },
+    { name: 'Python', category: 'Backend', iconClass: 'fab fa-python' },
+    { name: 'C', category: 'Backend', iconClass: 'fas fa-terminal' },
+    { name: 'Angular', category: 'Frontend', iconClass: 'fab fa-angular' },
+    { name: 'TypeScript', category: 'Frontend', iconClass: 'fab fa-js' },
+    { name: 'HTML5', category: 'Frontend', iconClass: 'fab fa-html5' },
+    { name: 'CSS3/SCSS', category: 'Frontend', iconClass: 'fab fa-css3-alt' },
+    { name: 'SQL', category: 'Database', iconClass: 'fas fa-database' },
+    { name: 'Git', category: 'Tools', iconClass: 'fab fa-git-alt' },
+    { name: 'Scrum', category: 'Methodology', iconClass: 'fas fa-users' },
+    { name: 'Agile', category: 'Methodology', iconClass: 'fas fa-sync-alt' },
   ];
 
   getSkillsByCategory(category: string): Skill[] {

@@ -82,6 +82,29 @@
   gap: 1rem;
 }
 
+.project-links .btn {
+  background: white;
+  color: var(--primary-color);
+  border: 2px solid white;
+  padding: 1.5rem 1.5rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 50px;
+  width: 100px;
+}
+
+.project-links .btn:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+  transform: translateY(-2px);
+}
+
 .project-content {
   padding: 1.5rem;
 }
@@ -115,9 +138,9 @@
 }
 
 /* Placeholder for missing images */
-.project-image img[src="assets/images/project1.jpg"],
-.project-image img[src="assets/images/project2.jpg"],
-.project-image img[src="assets/images/project3.jpg"] {
+.project-image img[src="assets/images/LaCultureUI.png"],
+.project-image img[src="assets/images/CatholicCompanion.png"],
+.project-image img[src="assets/images/PortfolioWebsite.png"] {
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   display: flex;
   align-items: center;
@@ -126,9 +149,9 @@
   font-weight: 600;
 }
 
-.project-image img[src="assets/images/project1.jpg"]::after,
-.project-image img[src="assets/images/project2.jpg"]::after,
-.project-image img[src="assets/images/project3.jpg"]::after {
+.project-image img[src="assets/images/LaCultureUI.png"]::after,
+.project-image img[src="assets/images/CatholicCompanion.png"]::after,
+.project-image img[src="assets/images/PortfolioWebsite.png"]::after {
   content: 'Project Image';
 }
 

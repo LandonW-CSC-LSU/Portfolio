@@ -1,6 +1,5 @@
 export interface Skill {
   name: string;
-  level: 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert';
-  category: 'Frontend' | 'Backend' | 'Database' | 'Tools' | 'Other';
+  category: 'Frontend' | 'Backend' | 'Database' | 'Tools' | 'Methodology' | 'Other';
   iconClass?: string;
 }

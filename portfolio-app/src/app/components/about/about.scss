@@ -4,7 +4,7 @@
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -19,16 +19,68 @@
   color: var(--text-secondary);
 }
 
+.experience-highlight {
+  margin: 3rem 0;
+}
+
+.main-experience {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  transform: scale(1);
+  transition: var(--transition);
+}
+
+.main-experience:hover {
+  transform: scale(1.02);
+}
+
+.main-experience h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.main-experience h3 a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
+}
+
+.main-experience h3 a:hover {
+  border-bottom-color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.main-experience h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.main-experience p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+}
+
 .about-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
   margin-top: 3rem;
 }
 
 .stat {
   text-align: center;
-  padding: 1.5rem;
+  padding: 2.5rem 2rem;
   background: var(--background);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow);
@@ -59,12 +111,24 @@
     padding: 4rem 0;
   }
   
+  .main-experience {
+    padding: 2rem 1.5rem;
+  }
+  
+  .main-experience h3 {
+    font-size: 1.5rem;
+  }
+  
+  .main-experience h4 {
+    font-size: 1.125rem;
+  }
+  
   .about-stats {
-    gap: 1rem;
+    gap: 1.5rem;
   }
   
   .stat {
-    padding: 1rem;
+    padding: 2rem 1.5rem;
   }
   
   .stat h3 {

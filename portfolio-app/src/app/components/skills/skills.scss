@@ -3,42 +3,12 @@
   background: var(--background-alt);
 }
 
-.skills-container {
-  display: grid;
-  gap: 3rem;
-}
-
-.skill-category {
-  background: var(--background);
-  padding: 2rem;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow);
-}
-
-.category-title {
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  text-align: center;
-  position: relative;
-}
-
-.category-title::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 2px;
-  background: var(--primary-color);
-  border-radius: 2px;
-}
-
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .skill-item {
@@ -76,37 +46,28 @@
 .skill-name {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
   color: var(--text-primary);
+  transition: var(--transition);
 }
 
-.skill-level {
-  font-size: 0.875rem;
+.skill-category {
+  font-size: 0.75rem;
   font-weight: 500;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
+  color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
 }
 
-.level-beginner {
-  background: #fecaca;
-  color: #dc2626;
+.skill-item:hover .skill-category {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.level-intermediate {
-  background: #fed7aa;
-  color: #ea580c;
-}
-
-.level-advanced {
-  background: #bbf7d0;
-  color: #16a34a;
-}
-
-.level-expert {
-  background: #ddd6fe;
-  color: #7c3aed;
+.skill-item:hover .skill-name {
+  color: var(--primary-color);
 }
 
 /* Mobile Responsive */
@@ -115,12 +76,8 @@
     padding: 4rem 0;
   }
   
-  .skill-category {
-    padding: 1.5rem;
-  }
-  
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
   }
   
