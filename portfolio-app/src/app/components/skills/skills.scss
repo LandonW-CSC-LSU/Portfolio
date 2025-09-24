@@ -1,0 +1,130 @@
+.skills {
+  padding: 6rem 0;
+  background: var(--background-alt);
+}
+
+.skills-container {
+  display: grid;
+  gap: 3rem;
+}
+
+.skill-category {
+  background: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.category-title {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.category-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.skill-item:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  font-size: 1.25rem;
+}
+
+.skill-info {
+  flex: 1;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+}
+
+.skill-level {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.level-beginner {
+  background: #fecaca;
+  color: #dc2626;
+}
+
+.level-intermediate {
+  background: #fed7aa;
+  color: #ea580c;
+}
+
+.level-advanced {
+  background: #bbf7d0;
+  color: #16a34a;
+}
+
+.level-expert {
+  background: #ddd6fe;
+  color: #7c3aed;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .skills {
+    padding: 4rem 0;
+  }
+  
+  .skill-category {
+    padding: 1.5rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .skill-item {
+    padding: 0.75rem;
+  }
+}

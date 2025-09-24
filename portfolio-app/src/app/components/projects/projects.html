@@ -1,0 +1,37 @@
+<section id="projects" class="projects">
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      @for (project of projects; track project.id) {
+        <div class="project-card" [class.featured]="project.featured">
+          <div class="project-image">
+            <img [src]="project.imageUrl" [alt]="project.title" />
+            <div class="project-overlay">
+              <div class="project-links">
+                @if (project.demoUrl) {
+                  <a [href]="project.demoUrl" target="_blank" class="btn btn-small">
+                    <i class="icon-external"></i>Live Demo
+                  </a>
+                }
+                @if (project.githubUrl) {
+                  <a [href]="project.githubUrl" target="_blank" class="btn btn-small">
+                    <i class="icon-github"></i>Code
+                  </a>
+                }
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+            <div class="project-tech">
+              @for (tech of project.technologies; track tech) {
+                <span class="tech-tag">{{ tech }}</span>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
