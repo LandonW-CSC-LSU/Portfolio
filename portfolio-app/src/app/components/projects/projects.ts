@@ -36,7 +36,7 @@ export class Projects {
       description: 'A portfolio website showcasing my projects and skills',
       technologies: ['Angular', 'TypeScript', 'SCSS'],
       imageUrl: 'assets/images/PortfolioWebsite.png',
-      demoUrl: 'https://demo-portfolio.com',
+      demoUrl: 'https://LandonW-CSC-LSU.github.io/Portfolio/',
       githubUrl: 'https://github.com/LandonW-CSC-LSU/Portfolio',
       featured: false
     }
