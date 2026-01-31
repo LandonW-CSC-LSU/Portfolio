@@ -33,6 +33,9 @@ jobs:
       - name: Build Angular app
         run: npm run build -- --configuration production --base-href="/Portfolio/"
 
+      - name: Add .nojekyll file
+        run: touch dist/portfolio-app/browser/.nojekyll
+
       - name: Copy index.html to 404.html for SPA routing
         run: cp dist/portfolio-app/browser/index.html dist/portfolio-app/browser/404.html
 
